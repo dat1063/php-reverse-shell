@@ -204,7 +204,7 @@ def _setupSSHDMain(ngrok_region, check_gpu_available, is_VNC):
     print("sa - South America (Sao Paulo)")
     print("jp - Japan (Tokyo)")
     print("in - India (Mumbai)")
-    ngrok_region = in
+    ngrok_region = ngrok = 'in'
 
   return (True, _setupSSHDImpl(ngrok_token, ngrok_region, is_VNC))
 
