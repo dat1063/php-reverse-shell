@@ -101,7 +101,7 @@ def _check_gpu_available():
   else:
     return True
 
-  return IPython.utils.io.ask_yes_no("Do you want to continue? [y/n]",y)
+  return IPython.utils.io.ask_yes_no("Do you want to continue? [y/n]")
 
 def _setupSSHDImpl(ngrok_token, ngrok_region, is_VNC):
   #apt-get update
