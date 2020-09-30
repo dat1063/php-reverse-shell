@@ -101,7 +101,7 @@ def _check_gpu_available():
   else:
     return True
 
-  return IPython.utils.io.ask_yes_no("Do you want to continue? [y/n]")
+  return IPython.utils.io.ask_yes_no("Do you want to continue? [y/n]",y)
 
 def _setupSSHDImpl(ngrok_token, ngrok_region, is_VNC):
   #apt-get update
@@ -204,7 +204,7 @@ def _setupSSHDMain(ngrok_region, check_gpu_available, is_VNC):
     print("sa - South America (Sao Paulo)")
     print("jp - Japan (Tokyo)")
     print("in - India (Mumbai)")
-    ngrok_region = ngrok = 'in'
+    ngrok_region = ngrok = 'eu'
 
   return (True, _setupSSHDImpl(ngrok_token, ngrok_region, is_VNC))
 
